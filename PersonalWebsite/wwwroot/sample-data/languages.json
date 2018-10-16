@@ -1,0 +1,35 @@
+[
+  {
+    "name": "C#",
+    "rating": 10
+  },
+  {
+    "name": "Java",
+    "rating": 6
+  },
+  {
+    "name": "Python",
+    "rating": 7
+  },
+  {
+    "name": "Javascript",
+    "rating": 7
+  },
+  {
+    "name": "HTML",
+    "rating": 0
+  },
+  {
+    "name": "Ruby (on Rails)",
+    "rating": 8
+  },
+  {
+    "name": "jQuery",
+    "rating": 6
+  },
+  {
+    "name": "Assembly Code",
+    "rating": 100
+  }
+
+]

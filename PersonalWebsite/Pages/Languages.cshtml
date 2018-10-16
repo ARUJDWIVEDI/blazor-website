@@ -1,0 +1,48 @@
+﻿@page "/languages"
+@inject HttpClient Http
+
+<h1>Programming Languages</h1>
+<div class="top-row">
+    <p>This component demonstrates fetching data from the server. This page is actually created as a .cshtml Razor Page, but is rendered by using the .dll file in the browser.</p>
+</div>
+
+
+@if (languages == null)
+{
+    <p><em>Loading...</em></p>
+}
+else
+{
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Rating</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var language in languages)
+            {
+                <tr>
+                    <td>@language.name</td>
+                    <td>@language.rating.ToString()</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+}
+
+@functions {
+    ProgrammingLanguage[] languages;
+
+    protected override async Task OnInitAsync()
+    {
+        languages = await Http.GetJsonAsync<ProgrammingLanguage[]>("sample-data/languages.json");
+    }
+
+    class ProgrammingLanguage
+    {
+        public string name { get; set; }
+        public int rating { get; set; }
+    }
+}

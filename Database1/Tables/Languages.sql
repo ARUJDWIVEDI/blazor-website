@@ -1,0 +1,6 @@
+﻿CREATE TABLE [dbo].[Languages]
+(
+	[LanguageID] BIGINT NOT NULL PRIMARY KEY IDENTITY, 
+    [Name] NVARCHAR(300) NOT NULL, 
+    [Rating] SMALLINT NOT NULL
+)

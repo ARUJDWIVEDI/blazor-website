@@ -1,0 +1,8 @@
+﻿INSERT INTO Languages VALUES ('C#', 10)
+INSERT INTO Languages VALUES ('Java', 6)
+INSERT INTO Languages VALUES ('Python', 7)
+INSERT INTO Languages VALUES ('Javascript', 7)
+INSERT INTO Languages VALUES ('HTML', 0)
+INSERT INTO Languages VALUES ('Ruby (on Rails)', 8)
+INSERT INTO Languages VALUES ('jQuery', 6)
+INSERT INTO Languages VALUES ('Assembly Code', 1000)

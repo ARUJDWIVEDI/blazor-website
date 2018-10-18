@@ -122,12 +122,17 @@
     <Folder Include="Properties" />
     <Folder Include="Data" />
     <Folder Include="Snapshots" />
+    <Folder Include="Tables" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Data\Languages.sql" />
     <None Include="Snapshots\Database_20181018_11-17-58.dacpac" />
+    <None Include="Snapshots\Database_20181018_13-17-17.dacpac" />
   </ItemGroup>
   <ItemGroup>
     <RefactorLog Include="Database1.refactorlog" />
+  </ItemGroup>
+  <ItemGroup>
+    <Build Include="Tables\Languages.sql" />
   </ItemGroup>
 </Project>
